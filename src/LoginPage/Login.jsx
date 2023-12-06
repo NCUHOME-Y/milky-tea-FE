@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 // import './Login.css'
-// import {create} from 'zustand'
+import { create } from 'zustand'
 import { useNavigate } from 'react-router-dom'
 
 
@@ -16,11 +16,11 @@ export default function Login() {
     }
 
 
-    // const useUserStore = create((set) => ({
-    //     user: null,
-    //     setUser: (user) => set({ user }),
-    //     clearUser: () => set({ user: null }),
-    // }))
+    const useUserStore = create((set) => ({
+        user: null,
+        setUser: (user) => set({ user }),
+        clearUser: () => set({ user: null }),
+    }))
 
 
 
@@ -48,7 +48,7 @@ export default function Login() {
             const data = await response.json()
 
             if (response.ok) {
-                // useUserStore(data)
+                useUserStore.setUser(data)
                 localStorage.setItem('token', data.token)
                 alert("登录成功")
                 // navigate('/DrinkTea')

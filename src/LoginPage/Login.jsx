@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import './Login.css'
 import { create } from 'zustand'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 
 const SetUserState = create(set => ({
     ifLogined: false,
@@ -12,12 +12,8 @@ export default function Login() {
     const [username, SetName] = useState("")
     const [password, SetPassword] = useState('')
     const checkboxRef = useRef(null)
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     const setLogin = SetUserState(state => state.setLogin)
-
-    const Navigation = () => {
-        navigate('/Register')
-    }
 
     const PostUserInformation = async () => {
         if (!username || !password) {
@@ -34,7 +30,7 @@ export default function Login() {
         try {
             const token = localStorage.getItem('token')
 
-            const response = await axios.post('http://127.0.0.1:8080/signup', {
+            const response = await axios.post('http://127.0.0.1:8080/login', {
                 username: username,
                 password: password,
             }, {
@@ -87,7 +83,7 @@ export default function Login() {
                     </div>
                     <div className='TheWayToRegister'>
                         <p>忘记密码</p>
-                        <p onClick={Navigation}>快速注册</p>
+                        <Link to='/Register'> <p>快速注册</p></Link>
                     </div>
                 </div>
                 <div className='underFoot'>

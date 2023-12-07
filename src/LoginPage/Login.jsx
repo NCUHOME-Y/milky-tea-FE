@@ -30,19 +30,22 @@ export default function Login() {
             return
         }
 
+
         try {
+            const token = localStorage.getItem('token')
+
             const response = await axios.post('http://127.0.0.1:8080/signup', {
-                username : username,
-                password : password ,
-            },{
-                headers : {
-                    "Authorization" : token ,
+                username: username,
+                password: password,
+            }, {
+                headers: {
+                    "Authorization": token,
                 }
             })
 
             const data = response.data
 
-            localStorage.setItem('token',data.token)
+            localStorage.setItem('token', data.token)
 
             if (response.status === 200) {
                 alert("登录成功")

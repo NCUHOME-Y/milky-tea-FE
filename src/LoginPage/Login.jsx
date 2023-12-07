@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-// import './Login.css'
+import './Login.css'
 import { create } from 'zustand'
 import { useNavigate } from 'react-router-dom'
 
@@ -16,13 +16,12 @@ export default function Login() {
     }
 
 
-    const useUserStore = create((set) => ({
-        user: null,
-        setUser: (user) => set({ user }),
-        clearUser: () => set({ user: null }),
+    const SetUserState = create(set => ({
+        ifLogined: false,
+        setLogin: (state) => set({ ifLogined: state }),
     }))
 
-
+    const setLogin = SetUserState(state => state.setLogin)
 
     const PostUserInformation = async () => {
         if (!username || !password) {
@@ -48,12 +47,16 @@ export default function Login() {
             const data = await response.json()
 
             if (response.ok) {
-                useUserStore.setUser(data)
+
                 localStorage.setItem('token', data.token)
                 alert("登录成功")
+                setLogin(true)
+                alert(`用户的登录状态为${SetUserState.getState().ifLogined}`)
                 // navigate('/DrinkTea')
 
             } else {
+                setLogin(false)
+                alert(`用户的登录状态为${SetUserState.getState().ifLogined}`)
                 alert(`登录失败：${data.msg}`)
             }
         } catch (error) {
@@ -69,10 +72,12 @@ export default function Login() {
             <div className="Allof">
                 {/* <img />等设计写好了登录页面再把src传上去 */}
                 <div className="Login-Box">
+
                     <div className='UserInformation'>
                         <p className='word'>请输入您的姓名</p>
                         <input type="text" value={username} placeholder='姓名' onChange={(e) => { SetName(e.target.value) }} className='TEXT' />
                     </div>
+                    <p className='word'>请输入您的密码</p>
                     <div className='UserInformation'>
                         <p className='word'>请输入您的密码</p>
                         <input type="password" value={password} placeholder='密码' onChange={(e) => { SetPassword(e.target.value) }} className='TEXT' />

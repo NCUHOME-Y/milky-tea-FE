@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Allof {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: auto;
+    justify-content: center;
+    background-image: url('../asset/图片.png');
+}
+
+.Login-Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 308px;
+    height: 376px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #6E3A25;
+}
+
+.underFoot {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    bottom: 50px;
+}
+
+
+.UserInformation {
+    border-radius: 20px;
+    background: #6E3A25;
+    width: 308px;
+    height: 454px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoginBtn {
+    margin-top: 40px;
+    width: 143px;
+    height: 64px;
+    border: none;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF8EE;
+    color: #3A1509;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.TEXT {
+    border: none;
+    background-color: #FFF8EE;
+    outline: none;
+    padding: 5px;
+
+}
+
+.TEXT::-webkit-input-placeholder {
+    color: #513617;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.word {
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

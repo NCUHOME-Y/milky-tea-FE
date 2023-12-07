@@ -1,7 +1,8 @@
 import React, { useState, useRef } from 'react';
 import './Login.css'
 import { create } from 'zustand'
-import { useNavigate, Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import { Checkbox } from 'antd'
 
 const SetUserState = create(set => ({
     ifLogined: false,
@@ -12,8 +13,20 @@ export default function Login() {
     const [username, SetName] = useState("")
     const [password, SetPassword] = useState('')
     const checkboxRef = useRef(null)
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
     const setLogin = SetUserState(state => state.setLogin)
+    const onChange = (e) => {
+        console.log(`checked = ${e.target.checked}`);
+    }
+
+    const ToRegister = () => {
+        navigate('/Register')
+    }
+
+    const ToYourChoice = () => {
+        navigate('/YourChoice')
+    }
+
 
     const PostUserInformation = async () => {
         if (!username || !password) {
@@ -28,7 +41,6 @@ export default function Login() {
 
 
         try {
-            const token = localStorage.getItem('token')
 
             const response = await axios.post('http://127.0.0.1:8080/login', {
                 username: username,
@@ -53,7 +65,6 @@ export default function Login() {
             alert(`请求出现错误：${error}`)
         }
 
-
     }
 
 
@@ -62,28 +73,26 @@ export default function Login() {
     return (
         <>
             <div className="Allof">
-                {/* <img />等设计写好了登录页面再把src传上去 */}
+
                 <div className="Login-Box">
 
                     <div className='UserInformation'>
-                        <p className='word'>请输入您的姓名</p>
                         <input type="text" value={username} placeholder='姓名' onChange={(e) => { SetName(e.target.value) }} className='TEXT' />
                     </div>
                     <div className='UserInformation'>
-                        <p className='word'>请输入您的密码</p>
                         <input type="password" value={password} placeholder='密码' onChange={(e) => { SetPassword(e.target.value) }} className='TEXT' />
                     </div>
                     <div className='LoginBtnBox'>
                         <button className='LoginBtn' onClick={PostUserInformation}>登录</button>
                     </div>
-                    <div className='TheWayToRegister'>
-                        <p>忘记密码</p>
-                        <Link to='/Register'> <p>快速注册</p></Link>
-                    </div>
+                </div>
+                <div className='TheWayToRegister'>
+                    <p onClick={ToYourChoice}>游客登录</p>
+                    <p onClick={ToRegister}>快速注册</p>
                 </div>
                 <div className='underFoot'>
-                    <input type='checkbox' ref={checkboxRef} />
-                    <span>登录/注册表示同意《今天吃饱了?团队出品协议》</span>
+                    <Checkbox onChange={onChange} ref={checkboxRef}></Checkbox>
+                    <span className='word'>登录/注册表示同意《今天吃饱了?团队出品协议》</span>
                 </div>
 
             </div>

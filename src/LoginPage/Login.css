@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: center;
     width: 308px;
-    height: 376px;
+    height: 454px;
     flex-shrink: 0;
     border-radius: 20px;
     background: #6E3A25;
@@ -51,9 +51,9 @@
 }
 
 .UserInformation {
-    width: 220px;
+    width: 240px;
+    height: 56px;
     margin-top: 40px;
-    height: 64px;
     border-radius: 20px;
     background: #FFF8EE;
     display: flex;
@@ -66,7 +66,6 @@
     width: 143px;
     height: 64px;
     border: none;
-    flex-shrink: 0;
     border-radius: 20px;
     background: #FFF8EE;
     color: #3A1509;

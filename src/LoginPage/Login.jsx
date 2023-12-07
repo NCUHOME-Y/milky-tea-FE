@@ -33,19 +33,14 @@ export default function Login() {
             const response = await axios.post('http://127.0.0.1:8080/login', {
                 username: username,
                 password: password,
-            }, {
-                headers: {
-                    "Authorization": `Bearer${token}`,
-                }
             })
 
             const data = response.data
 
-            localStorage.setItem('token', data.token)
-
             if (response.status === 200) {
                 alert("登录成功")
                 setLogin(true)
+                localStorage.setItem('token', data.token)
                 alert(`用户的登录状态为${SetUserState.getState().ifLogined}`)
                 // navigate('/DrinkTea')
 

@@ -35,7 +35,7 @@ export default function Login() {
                 password: password,
             }, {
                 headers: {
-                    "Authorization": token,
+                    "Authorization": `Bearer${token}`,
                 }
             })
 

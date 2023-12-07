@@ -3,28 +3,26 @@
     bottom: 0;
     background: #D9D9D9;
     width: 393px;
-    height: 80px;
+    height: 82px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 15px 15px 0px 0px;
+    background: #91543F;
 }
 
-.makingBar {
-    margin-left: 55px;
-    margin-top: 1px;
-    margin-bottom: 1px;
+.element {
+    padding: 15px;
 }
 
-.garbage {
-    margin-left: 118px;
-    margin-top: 1px;
-    margin-bottom: 1px;
-}
-
-.makingBarText {
-    color: #000;
+.element>p {
+    color: #FFF;
+    text-align: center;
     font-family: Inter;
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-
 }
+

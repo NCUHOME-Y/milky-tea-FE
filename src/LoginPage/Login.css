@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 .Allof {
     display: flex;
     flex-direction: column;
@@ -11,6 +6,7 @@
     width: auto;
     justify-content: center;
     background-image: url('../asset/图片.png');
+
 }
 
 .Login-Box {

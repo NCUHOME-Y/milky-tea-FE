@@ -41,10 +41,15 @@ export default function Login() {
 
 
         try {
+            const token = localStorage.setItem('token')
 
             const response = await axios.post('http://127.0.0.1:8080/login', {
                 username: username,
                 password: password,
+            }, {
+                headers: {
+                    'Authorization': `Bearer${token}`
+                }
             })
 
             const data = response.data
@@ -54,7 +59,7 @@ export default function Login() {
                 setLogin(true)
                 localStorage.setItem('token', data.token)
                 alert(`用户的登录状态为${SetUserState.getState().ifLogined}`)
-                // navigate('/DrinkTea')
+                navigate('/DrinkTea')
 
             } else {
                 setLogin(false)

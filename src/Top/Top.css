@@ -1,5 +1,5 @@
 .top {
-    width:100%;
+    width: 100%;
     height: 76px;
     flex-shrink: 0;
     border-radius: 0px 0px 15px 15px;
@@ -7,4 +7,18 @@
     border: none;
     position: absolute;
     top: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.top>h1 {
+    color: #FFF7ED;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

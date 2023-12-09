@@ -1,0 +1,158 @@
+.BigBox {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+
+.LittleBtn1 {
+    margin: 5% 9% 5% 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFDEB2;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 60px;
+    height: 24px;
+}
+
+.LittleBtn1active {
+    background-color: #E99F72;
+    margin: 5% 9% 5% 0;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 60px;
+    height: 24px;
+}
+
+.LittleBtn2 {
+    margin: 5% 9% 5% 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFDEB2;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 60px;
+    height: 24px;
+}
+
+.LittleBtn2active {
+    background-color: #E99F72;
+    margin: 5% 9% 5% 0;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 60px;
+    height: 24px;
+}
+
+.LittleBtn3 {
+    margin: 5% 9% 5% 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #FFDEB2;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 60px;
+    height: 24px;
+}
+
+.LittleBtn3active {
+    background-color: #E99F72;
+    margin: 5% 9% 5% 0;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 60px;
+    height: 24px;
+}
+
+
+.All {
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    overflow: hidden;
+    background-image: url('../image/图片.png');
+}
+
+.ScaleWord {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.LittleBtn2:nth-child(4) {
+    width: 97.593px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.LittleBtn2active:nth-child(4) {
+    width: 97.593px;
+    height: 24px;
+    flex-shrink: 0;
+    margin: 5% 9% 5% 0;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #E99F72;
+}
+
+.BottomLine {
+    position: absolute;
+    bottom: 26%;
+    left: 36%;
+}
+
+.BTN {
+    border-radius: 15px;
+    background: #FFDEB2;
+    width: 110px;
+    height: 50px;
+    border: none;
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}

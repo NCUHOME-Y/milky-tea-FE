@@ -12,6 +12,7 @@ const SetUserState = create(set => ({
 export default function Login() {
     const [username, SetName] = useState("")
     const [password, SetPassword] = useState('')
+    const [ifClicked,setIfClicked] = useState('')
     const checkboxRef = useRef(null)
     const navigate = useNavigate()
     const setLogin = SetUserState(state => state.setLogin)
@@ -68,6 +69,23 @@ export default function Login() {
 
     }
 
+    const CustomerLogin = () => {
+        if(!checkboxRef.current.checked){
+            alert("您还没有勾选协议，请先勾选再登录")
+            return
+        }
+
+        ToYourChoice()
+    }
+
+    const FastWayToRegister =() => {
+        if(!checkboxRef.current.checked){
+            alert("您还没有勾选协议，请先勾选再登录")
+            return
+        }
+
+        ToRegister()
+    }
 
 
 
@@ -88,8 +106,8 @@ export default function Login() {
                     </div>
                 </div>
                 <div className='TheWayToRegister'>
-                    <p onClick={ToYourChoice}>游客登录</p>
-                    <p onClick={ToRegister}>快速注册</p>
+                    <p onClick={CustomerLogin}>游客登录</p>
+                    <p onClick={FastWayToRegister}>快速注册</p>
                 </div>
                 <div className='underFoot'>
                     <input type='checkbox' onChange={onChange} ref={checkboxRef} />

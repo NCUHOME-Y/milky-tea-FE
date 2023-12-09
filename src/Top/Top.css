@@ -10,8 +10,9 @@
     top: 0;
     z-index: 2;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .top>h1 {
@@ -22,5 +23,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 10px;
+}
+
+.top > svg{
+    position: absolute;
+    left: 10px;
 }

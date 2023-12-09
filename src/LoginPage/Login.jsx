@@ -2,7 +2,7 @@ import React, { useState, useRef } from 'react';
 import './Login.css'
 import { create } from 'zustand'
 import { useNavigate } from 'react-router-dom'
-import { Checkbox } from 'antd'
+
 
 const SetUserState = create(set => ({
     ifLogined: false,

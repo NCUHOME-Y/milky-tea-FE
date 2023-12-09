@@ -41,25 +41,21 @@ export default function Login() {
 
 
         try {
-            const token = localStorage.setItem('token')
 
             const response = await axios.post('http://127.0.0.1:8080/login', {
                 username: username,
                 password: password,
-            }, {
-                headers: {
-                    'Authorization': `Bearer${token}`
-                }
             })
 
             const data = response.data
+
 
             if (response.status === 200) {
                 alert("登录成功")
                 setLogin(true)
                 localStorage.setItem('token', data.token)
                 alert(`用户的登录状态为${SetUserState.getState().ifLogined}`)
-                navigate('/DrinkTea')
+                navigate('/YourChoice')
 
             } else {
                 setLogin(false)
@@ -96,7 +92,7 @@ export default function Login() {
                     <p onClick={ToRegister}>快速注册</p>
                 </div>
                 <div className='underFoot'>
-                    <Checkbox onChange={onChange} ref={checkboxRef}></Checkbox>
+                    <input type='checkbox' onChange={onChange} ref={checkboxRef} />
                     <span className='word'>登录/注册表示同意《今天吃饱了?团队出品协议》</span>
                 </div>
 

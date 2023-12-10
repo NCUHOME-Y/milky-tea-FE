@@ -1,4 +1,4 @@
-import './FinalTOP.css'
+import './FinalTop.css'
 import { useNavigate } from 'react-router-dom'
 
 

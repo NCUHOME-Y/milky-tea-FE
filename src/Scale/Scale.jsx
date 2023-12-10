@@ -27,7 +27,7 @@ export default function Scale() {
 
     return (
         <>
-            <div className="All">
+            <div className="AllGood">
                 <Top />
                 <BottomRooter />
 

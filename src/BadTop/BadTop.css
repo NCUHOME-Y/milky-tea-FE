@@ -1,0 +1,31 @@
+.badtop {
+    left: 0;
+    right: 0;
+    height: 69px;
+    flex-shrink: 0;
+    border-radius: 0px 0px 15px 15px;
+    background-color: #513617;
+    border: none;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.badtop>h1 {
+    color: #FFF7ED;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.badtop > svg{
+    position: absolute;
+    left: 10px;
+}

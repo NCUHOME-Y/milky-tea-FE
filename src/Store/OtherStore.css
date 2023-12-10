@@ -1,0 +1,90 @@
+.BySide {
+    height: 82%;
+    width: 80px;
+    z-index: 0;
+    border-radius: 20px 20px 0px 0px;
+    background-color: #AE7B5C;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+}
+
+.otherCenter {
+    position: absolute;
+    bottom: 0;
+    left: 95px;
+    border-radius: 35px 35px 0px 0px;
+    background: #E3CCBE;
+    width: 252px;
+    height: 650px;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
+.Container {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-image: url('./Img/BackGround.png');
+}
+
+.WhereTheMilkTeaFrom {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 163px;
+    top: 149px;
+}
+
+.MadeYourSelf {
+    background-color: #FFFCF5;
+    width: 93px;
+    height: 72px;
+    display: flex;
+    border-radius: 16px 16px 0px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.otherOtherGive {
+    background-color: #E3CCBE;
+    width: 93px;
+    height: 72px;
+    border-radius: 16px 16px 14px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MadeYourSelf>p {
+    color: #4C4035;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 0;
+}
+
+.otherOtherGive>p {
+    color: #4C4035;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.pictureContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 127px;
+    top: 216px;
+    z-index: 2;
+}

@@ -27,6 +27,7 @@ export default function YourChoice() {
         }, 3000);
     };
 
+
     const handleOtherCancel = () => {
         setOtherOpen(false);
     };
@@ -38,7 +39,7 @@ export default function YourChoice() {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-            changePage('/Login')
+            changePage('/MakingBad')
         }, 3000);
     };
     const handleCancel = () => {
@@ -101,7 +102,7 @@ export default function YourChoice() {
                     </div>
                     <h1 className='Content' >or</h1>
                     <div className='Content' id='Content1'>
-                        <img src={stinkyImg} onClick={() => { changePage('/Login') }} />
+                        <img src={stinkyImg} onClick={() => { changePage('/MakingBad') }} />
                         <Button type="primary" onClick={showModal}>
                             ? ? 奶茶
                         </Button>

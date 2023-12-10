@@ -1,0 +1,114 @@
+.InTheFirstLine {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: row;
+    left: 5%;
+    top: 10%;
+}
+
+.badInputName {
+    margin-left: 15px;
+    border-radius: 15px;
+    background: #C8AA98;
+    width: 116px;
+    height: 42px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badinputname {
+    width: 90px;
+    border: none;
+    background-color: #C8AA98;
+    outline: none;
+}
+
+.badinputname::-webkit-input-placeholder {
+    color: #B97953;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.badOutsideBox {
+    position: absolute;
+    top: 23%;
+    left: 5%;
+    width: 354px;
+    height: 437px;
+    border: none;
+    border-radius: 25px;
+    background: #C8AA98;
+}
+
+.badInsideBox {
+    position: absolute;
+    top: 53px;
+    left: 17px;
+    width: 318px;
+    height: 351px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background-color: #FAF0EB;
+    border: none;
+    outline: none;
+}
+
+.badTheWordWannaSay {
+    position: absolute;
+    top: 17px;
+    left: 30px;
+    color: #513617;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.badInsideTextarea {
+    background-color: #FAF0EB;
+    border: none;
+    outline: none;
+    width: 280px;
+    position: relative;
+    left: 17px;
+    top: 25px;
+    height: 300px;
+}
+
+.InTheBottom {
+    position: absolute;
+    bottom: 13%;
+    left: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badBottomButton {
+    width: 231px;
+    height: 72px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #C8AA98;
+    color: #513617;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.AllbadToFriend{
+    height: 100%;
+    left: 0;
+    right: 0;
+    background-image: url('./SVG/BackGround.png');
+}

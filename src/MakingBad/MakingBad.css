@@ -1,0 +1,64 @@
+.badLadder {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 90px;
+    height: 362px;
+    border-radius: 0px 0px 25px 25px;
+    border: 0px solid #000;
+    background: #C8AA98;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    z-index: 0;
+}
+
+.LittlebadBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 21px;
+    border: none;
+    background-color: #AE7B5C;
+    margin-bottom: 18px;
+}
+
+
+.LittlebadBox.active {
+    background-color: #BC6A39;
+}
+
+.BottomContainer {
+    left: 0;
+    right: 0;
+    bottom: -30%;
+    transition: all 2s ease-in-out;
+}
+
+.BottomContainer.active {
+    bottom: 0;
+}
+
+/* p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+} */
+
+.Picture{
+    position: absolute;
+    top: 16%;
+    left: 30%;
+}
+
+.badBig{
+    height: 100%;
+    width: 100%;
+    background-image: url('./MakingBad/BadBackGround.png');
+}

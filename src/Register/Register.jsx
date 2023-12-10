@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { Checkbox } from 'antd'
+import { Link, useNavigate } from 'react-router-dom'
+
 
 
 export default function Register() {
@@ -77,8 +77,9 @@ export default function Register() {
                         <button className='LoginBtn' onClick={RegisterInformation}>注册</button>
                     </div>
                 </div>
+                <p className='BackToLogin'>回到<Link to='/Login'>登录页面</Link></p>
                 <div className='underFoot'>
-                    <Checkbox onChange={onChange} ref={checkboxRef}></Checkbox>
+                    <input type='checkbox' onChange={onChange} ref={checkboxRef} />
                     <span>登录/注册表示同意《今天吃饱了?团队出品协议》</span>
                 </div>
 

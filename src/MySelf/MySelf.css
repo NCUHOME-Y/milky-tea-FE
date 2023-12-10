@@ -1,0 +1,74 @@
+.Profile {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.Box {
+    width: 321px;
+    height: 79px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #F7DBB6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Every {
+    position: absolute;
+    left: 5%;
+    top: 16%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Every>div {
+    margin: 8px;
+}
+
+.Box>p {
+    color: #91543F;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    left: 5%;
+}
+
+.first {
+    color: #91543F;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.second {
+    color: #E99F72;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.One{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: url('./img/BackGround.png');
+    overflow: hidden;
+}

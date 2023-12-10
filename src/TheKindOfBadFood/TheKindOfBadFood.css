@@ -1,0 +1,30 @@
+.AllofbadElement {
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    height: 40%;
+    border-radius: 45px 45px 0px 0px;
+    border: 4px solid rgba(164, 133, 92, 0.60);
+    background: #C8AA98;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.Line {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 15px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Line>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+}

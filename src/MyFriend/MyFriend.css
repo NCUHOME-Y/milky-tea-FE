@@ -1,0 +1,146 @@
+.Profile {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.first {
+    color: #91543F;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.second {
+    color: #E99F72;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.UpperLine {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.SecondLine {
+    position: absolute;
+    top: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 370px;
+    height: 74px;
+    background-color: #F7DBB6;
+    border-radius: 0 20px 20px 0;
+}
+
+.OneOf {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-image: url('./IMG/好友.png');
+    display: flex;
+    flex-direction: column;
+}
+
+.FirstName {
+    color: #91543F;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.SecondWord {
+    color: #E99F72;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.ThirdLine {
+    position: absolute;
+    top: 35%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 370px;
+    height: 74px;
+    background-color: #F7DBB6;
+    border-radius: 0 20px 20px 0;
+}
+
+.FourthLine {
+    position: absolute;
+    top: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 370px;
+    height: 74px;
+    background-color: #F7DBB6;
+    border-radius: 0 20px 20px 0;
+}
+
+.FifthLine {
+    position: absolute;
+    top: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 370px;
+    height: 74px;
+    background-color: #F7DBB6;
+    border-radius: 0 20px 20px 0;
+}
+
+.SixthLine {
+    position: absolute;
+    top: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 370px;
+    height: 74px;
+    background-color: #F7DBB6;
+    border-radius: 0 20px 20px 0;
+}
+
+.SeventhLine {
+    position: absolute;
+    top: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 370px;
+    height: 74px;
+    background-color: #F7DBB6;
+    border-radius: 0 20px 20px 0;
+}
+
+.ThirdLine,.FifthLine,.FourthLine,.SeventhLine{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Round{
+    position: absolute;
+    left: 7%;
+}

@@ -1,0 +1,58 @@
+.ThreeElement {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+
+}
+
+.badMessage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 299px;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #DFD3CF;
+}
+
+.messageWord {
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.badTheBigBox {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: #F3E9E3;
+}
+
+.ThreeElement>div {
+    margin-bottom: 20px;
+}
+
+.badPictureButton {
+    border-radius: 15px;
+    background: #DFD3CF;
+    width: 213px;
+    height: 58px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
